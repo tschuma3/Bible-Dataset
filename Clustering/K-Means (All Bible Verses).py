@@ -11,7 +11,7 @@ dataset['com'] = dataset['com'].astype(int)
 X = dataset.iloc[:, 4:].values
 passages = dataset.iloc[:, [4, 5]].values
 
-#Encodes the words into numbersS
+#Encodes the words into numbers
 le = LabelEncoder()
 X[:, 0] = le.fit_transform(X[:, 0])
 X[:, 1] = le.fit_transform(X[:, 1])
